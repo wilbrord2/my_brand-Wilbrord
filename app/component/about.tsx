@@ -7,7 +7,7 @@ const AboutMe = () => {
     return new Date().getFullYear() - year;
   };
   return (
-    <div className="mt-12 md:h-screen max-2xl:h-screen scroll-mt-28" id="about">
+    <div className="mt-4 lg:mt-12 lg:h-screen 2xl:h-full scroll-mt-28" id="about">
       <SectionTitles title={"About ME"} />
       <p className="leading-loose">
         I am a highly skilled software developer with{" "}
