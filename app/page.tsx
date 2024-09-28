@@ -8,9 +8,9 @@ import Contact from "./component/contact";
 
 export default function Home() {
   return (
-    <main className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-8 px-12 ">
+    <main className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-4 md:gap-8 px-4 md:px-12 ">
       <AsidePage />
-      <div className="lg:w-2/3 flex flex-col gap-24 py-24">
+      <div className="lg:w-2/3  flex flex-col gap-24 py-24">
         <AboutMe />
         <Skills/>
         <Experience/>

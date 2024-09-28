@@ -66,7 +66,7 @@ const Experience = () => {
           <a href={job.link} target="_blank" rel="uplus.rw">
             <div
               key={index}
-              className="py-4 px-2 group flex gap-8 hover:bg-gray-800 hover:backdrop-blur-3xl hover:shadow-md hover:shadow-orange-800 hover:rounded-lg "
+              className="py-4 px-2 group flex flex-col md:flex-row gap-8 hover:bg-gray-800 hover:backdrop-blur-3xl hover:shadow-md hover:shadow-orange-800 hover:rounded-lg "
             >
               <div className="flex flex-col gap-2 group-hover:text-orange-400">
                 <span className="text-nowrap">{job.period}</span>

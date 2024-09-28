@@ -4,7 +4,7 @@ import React from "react";
 
 const AsidePage = () => {
   return (
-    <div className="relative lg:sticky py-20 lg:top-0 w-full lg:w-1/2 xl:w-1/3 lg:max-h-screen flex flex-col gap-4 text-start ">
+    <div className="relative lg:sticky py-10 md:py-20 lg:top-0 w-full lg:w-1/2 xl:w-1/3 lg:max-h-screen flex flex-col gap-4 text-start ">
       <div className="flex flex-col gap-4 text-start ">
         <h2>Hi👋, I am</h2>
         <h1 className="text-4xl font-bold ">
