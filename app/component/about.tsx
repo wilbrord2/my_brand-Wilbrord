@@ -26,7 +26,7 @@ const AboutMe = () => {
         success.
       </p>
 
-      <a href="/public/Wilbrord_SDR.pdf" download={"Wilbrord_SDR.pdf"}>
+      <a href="/Wilbrord_SDR.pdf" download={"Wilbrord_SDR.pdf"}>
         <button className="group inline-flex mt-4 px-2 py-2 border rounded-xl text-base hover:border-orange-400">
           Download CV
           <Icon

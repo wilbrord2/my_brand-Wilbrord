@@ -31,7 +31,7 @@ const Experience = () => {
         "Full-stack Software Developer at Andela Technical Leadership Program",
       link: "https://rwanda.andela.com/",
       description:
-        "During my internship at Andela, I immersed myself in various software development languages and technologies through comprehensive training. I excelled in writing efficient, testable code, collaborating within dynamic teams, and contributing to code documentation. I played a key role in release and sprint planning sessions, focusing on optimizing performance and enhancing user experience. Additionally, I wrote unit, integration, and end-to-end tests, implemented CI/CD pipelines to automate testing and deployment, managed code changes, and optimized both front-end and back-end performance for improved load times and responsiveness.",
+        "At Andela, I immersed myself in various software development languages and technologies through comprehensive training. I excelled in writing efficient, testable code, collaborating within dynamic teams, and contributing to code documentation. I played a key role in release and sprint planning sessions, focusing on optimizing performance and enhancing user experience. Additionally, I wrote unit, integration, and end-to-end tests, implemented CI/CD pipelines to automate testing and deployment, managed code changes, and optimized both front-end and back-end performance for improved load times and responsiveness.",
       technologies: [
         "Html",
         "css",
