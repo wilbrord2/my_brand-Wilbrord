@@ -4,7 +4,15 @@ import SectionTitles from "./sectionTitles";
 const Experience = () => {
   const expirience = [
     {
-      period: "2023 -> Presents",
+      period: "2024 -> Present",
+      work: "REMOTE",
+      jobTitle: "Frontend Developer At NexGen",
+      link: "https://nexgen.rw/",
+      description:"Developing and maintaining responsive web applications with a focus on delivering exceptional user experiences. Leveraging modern frontend technologies to implement dynamic interfaces, state management, and component animations. Collaborating closely with cross-functional teams to ensure high-quality and scalable solutions.",
+      technologies: ["Next Ts", "Context API","Redux Toolkit","Ant Design","Framer Motion","Tailwindcss",],
+    },
+    {
+      period: "2023 -> 2024",
       work: "HYBRID",
       jobTitle: "Full-stack Software Developer at Uplus Mutual Partners",
       link: "https://uplus.rw/",
@@ -48,15 +56,7 @@ const Experience = () => {
         "AWS",
       ],
     },
-    {
-      period: "2021 -> 2022",
-      work: "ONSITE",
-      jobTitle: "IT Ines Ruhengeri",
-      link: "https://www.ines.ac.rw/",
-      description:
-        "I managed IT projects using tools like Jira and Trello, ensuring on-time, budget-conscious delivery while coordinating system implementations for internal clients. I provided hands-on technical support for software and hardware issues, resolving complex problems as the final escalation point to minimize downtime. I conducted security assessments, managed backup procedures to safeguard data, and updated relevant documentation. Additionally, I maintained server rooms, networking, and servers, contributing my expertise to improve overall IT operations.",
-      technologies: ["Html", "css","Javascript","React", "Express", "Node", "MongoDB"],
-    },
+    
   ];
   return (
     <div id="expirience" className="scroll-mt-28">

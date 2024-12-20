@@ -13,7 +13,7 @@ const AboutMe = () => {
         I am a highly skilled software developer with{" "}
         <span className="font-semibold">
           {" "}
-          <span className="text-xl">{handleExpirienceYear(2020)}</span>
+          <span className="text-xl">{handleExpirienceYear(2022)}</span>
           <span className="relative -left-0 -top-2">+</span> years
         </span>{" "}
         of experience in software development, known for my ability to engineer
