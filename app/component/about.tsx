@@ -24,6 +24,7 @@ const AboutMe = () => {
         to a dynamic team, driving impactful projects and innovative solutions.
         Let's connect and explore how my skills can contribute to your company's
         success.
+        
       </p>
 
       <a href="/Wilbrord_SDR.pdf" download={"Wilbrord_SDR.pdf"}>
