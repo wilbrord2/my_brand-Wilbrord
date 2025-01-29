@@ -5,6 +5,13 @@ import Image from "next/image";
 const Work = () => {
   const projects = [
     {
+      image: "/mahali.png",
+      title: "Mahali Africa Adventure",
+      link: "#",
+      description:
+        "A tour and travel agency based in Rwanda, stands out for its expertise in crafting personalized adventures",
+    },
+    {
       image: "/website.png",
       title: "Uplus",
       link: "https://uplus.rw/",
@@ -28,13 +35,14 @@ const Work = () => {
       image: "/awesomity.png",
       title: "Mark 8",
       link: "https://mark8-ecommerce.netlify.app/dashboard",
-      description:"An e-commerce platfom where you can buy different products",
+      description: "An e-commerce platfom where you can buy different products",
     },
     {
       image: "/myshop.png",
       title: "Made in rwanda",
       link: "https://mark8-ecommerce.netlify.app/dashboard",
-      description:"A platform where you can find different made in rwanda clothes",
+      description:
+        "A platform where you can find different made in rwanda clothes",
     },
   ];
   return (
@@ -61,7 +69,7 @@ const Work = () => {
                 </div>
                 <div className="w-full text-end">
                   <button className="opacity-0 group-hover:opacity-100 hover:transition-all hover:duration-500 border border-gray-700 text-xs rounded-lg w-fit py-1 px-2">
-                    View Project
+                    {project.link ==='#' ? 'Under construction' :'View Project'}
                   </button>
                 </div>
               </div>

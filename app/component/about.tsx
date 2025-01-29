@@ -7,10 +7,13 @@ const AboutMe = () => {
     return new Date().getFullYear() - year;
   };
   return (
-    <div className="mt-4 lg:mt-12 lg:h-screen 2xl:h-full scroll-mt-28" id="about">
+    <div
+      className="mt-4 lg:mt-12 lg:h-screen 2xl:h-full scroll-mt-28"
+      id="about"
+    >
       <SectionTitles title={"About ME"} />
       <p className="leading-loose">
-        I am a highly skilled software developer with{" "}
+        I am a highly skilled frontend developer with{" "}
         <span className="font-semibold">
           {" "}
           <span className="text-xl">{handleExpirienceYear(2022)}</span>
@@ -24,10 +27,9 @@ const AboutMe = () => {
         to a dynamic team, driving impactful projects and innovative solutions.
         Let's connect and explore how my skills can contribute to your company's
         success.
-        
       </p>
 
-      <a href="/Wilbrord_SDR.pdf" download={"Wilbrord_SDR.pdf"}>
+      <a href="/Wilbrord_Fn.pdf" download={"Wilbrord_Fn.pdf"}>
         <button className="group inline-flex mt-4 px-2 py-2 border rounded-xl text-base hover:border-orange-400">
           Download CV
           <Icon
