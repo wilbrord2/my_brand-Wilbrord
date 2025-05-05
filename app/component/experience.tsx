@@ -8,8 +8,32 @@ const Experience = () => {
       work: "REMOTE",
       jobTitle: "Frontend Developer At NexGen",
       link: "https://nexgen.rw/",
-      description:"Developing and maintaining responsive web applications with a focus on delivering exceptional user experiences. Leveraging modern frontend technologies to implement dynamic interfaces, state management, and component animations. Collaborating closely with cross-functional teams to ensure high-quality and scalable solutions.",
-      technologies: ["Next Ts", "Context API","Redux Toolkit","Ant Design","Framer Motion","Tailwindcss",],
+      description:
+        "Developing and maintaining responsive web applications with a focus on delivering exceptional user experiences. Leveraging modern frontend technologies to implement dynamic interfaces, state management, and component animations. Collaborating closely with cross-functional teams to ensure high-quality and scalable solutions.",
+      technologies: [
+        "Next Ts",
+        "Context API",
+        "Redux Toolkit",
+        "Ant Design",
+        "Framer Motion",
+        "Tailwindcss",
+      ],
+    },
+    {
+      period: "2025 -> 4 Months",
+      work: "REMOTE",
+      jobTitle: "Frontend Developer At Apertacura",
+      link: "https://nexgen.rw/",
+      description:"Designing and maintaining responsive web and mobile applications with a strong emphasis on user experience. Utilizing modern frontend technologies to build dynamic interfaces, manage application state, and implement smooth component animations. Working collaboratively with cross-functional teams to deliver scalable, high-quality solutions.",
+       technologies: [
+        "React Native",
+        "Expo",
+        "Next Ts",
+        "Context API",
+        "Ant Design",
+        "Framer Motion",
+        "Tailwindcss",
+      ],
     },
     {
       period: "2023 -> 2024",
@@ -56,7 +80,6 @@ const Experience = () => {
         "AWS",
       ],
     },
-    
   ];
   return (
     <div id="expirience" className="scroll-mt-28">

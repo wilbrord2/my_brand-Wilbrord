@@ -60,7 +60,7 @@ const Skills = () => {
           </div>
           <div>
             <p className="text-sm text-wrap">
-              Over {handleExpirienceYear(2022)} years crafting dynamic <br />
+              Over {handleExpirienceYear(2021)} years crafting dynamic <br />
               web apps with and modern <br /> UI frameworks.
             </p>
             <div className="opacity-0 group-hover:opacity-100 flex mt-2 gap-2 ">
@@ -95,7 +95,7 @@ const Skills = () => {
           </div>
           <div>
             <p className="text-sm text-wrap">
-              Over {handleExpirienceYear(2022)} years of experience <br />{" "}
+              Over {handleExpirienceYear(2021)} years of experience <br />{" "}
               developing robust and scalable <br /> web backends with various
               databases.
             </p>
