@@ -13,7 +13,7 @@ const AboutMe = () => {
     >
       <SectionTitles title={"About ME"} />
       <p className="leading-loose">
-        I am a highly skilled frontend developer with{" "}
+        I am a highly skilled software developer with{" "}
         <span className="font-semibold">
           {" "}
           <span className="text-xl">{handleExpirienceYear(2021)}</span>
