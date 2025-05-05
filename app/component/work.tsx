@@ -5,6 +5,13 @@ import Image from "next/image";
 const Work = () => {
   const projects = [
     {
+      image: "/ape.png",
+      title: "Biggest Health Challenge",
+      link: "https://biggesthealthchallenge.com/",
+      description:
+        "ApertaCura is a proactive health and wellness company that offers a digital platform combining smart technology and personalized insights.",
+    },
+    {
       image: "/mahali.png",
       title: "Mahali Africa Adventure",
       link: "#",
