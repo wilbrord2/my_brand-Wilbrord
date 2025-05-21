@@ -14,7 +14,7 @@ const Work = () => {
     {
       image: "/mahali.png",
       title: "Mahali Africa Adventure",
-      link: "#",
+      link: "https://mahaliafrica.com/",
       description:
         "A tour and travel agency based in Rwanda, stands out for its expertise in crafting personalized adventures",
     },
