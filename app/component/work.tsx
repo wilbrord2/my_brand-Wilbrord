@@ -41,13 +41,13 @@ const Work = () => {
     {
       image: "/awesomity.png",
       title: "Mark 8",
-      link: "https://mark8-ecommerce.netlify.app/dashboard",
+      link: "https://mark8-ecommerce.netlify.app/",
       description: "An e-commerce platfom where you can buy different products",
     },
     {
       image: "/myshop.png",
       title: "Made in rwanda",
-      link: "https://mark8-ecommerce.netlify.app/dashboard",
+      link: "https://shoppingmadeinrwanda.netlify.app/",
       description:
         "A platform where you can find different made in rwanda clothes",
     },
@@ -71,12 +71,16 @@ const Work = () => {
               </div>
               <div className="flex flex-col justify-between items-center gap-2 p-2">
                 <div className="flex flex-col gap-2">
-                  <span className="group-hover:text-orange-400">{project.title}</span>
+                  <span className="group-hover:text-orange-400">
+                    {project.title}
+                  </span>
                   <span className="text-xs">{project.description}</span>
                 </div>
                 <div className="w-full text-end">
                   <button className="opacity-0 group-hover:opacity-100 hover:transition-all hover:duration-500 border border-gray-700 text-xs rounded-lg w-fit py-1 px-2">
-                    {project.link ==='#' ? 'Under construction' :'View Project'}
+                    {project.link === "#"
+                      ? "Under construction"
+                      : "View Project"}
                   </button>
                 </div>
               </div>
