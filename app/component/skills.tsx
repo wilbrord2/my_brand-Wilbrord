@@ -95,7 +95,7 @@ const Skills = () => {
           </div>
           <div>
             <p className="text-sm text-wrap">
-              Over {handleExpirienceYear(2021)} years of experience <br />{" "}
+              Over {handleExpirienceYear(2023)} years of experience <br />{" "}
               developing robust and scalable <br /> web backends with various
               databases.
             </p>
