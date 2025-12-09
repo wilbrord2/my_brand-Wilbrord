@@ -7,7 +7,6 @@ const Skills = () => {
     return new Date().getFullYear() - year;
   };
 
-  // Array of skill objects
   const skills = [
     {
       name: "Quality Assurance",
@@ -41,43 +40,45 @@ const Skills = () => {
   ];
 
   return (
-    <div id="skills" className="scroll-mt-28 ">
+    <section id="skills" className="scroll-mt-28 w-full">
       <SectionTitles title={"Skills"} />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch justify-stretch gap-4 py-4 cursor-pointer">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 py-6">
         {skills.map((skill, idx) => (
           <div
             key={idx}
-            className="group flex flex-col justify-between gap-2 border p-4 border-slate-500 hover:border-orange-400 w-fit rounded-lg font-mono"
+            className="group flex flex-col justify-between gap-4 border border-slate-700 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 shadow hover:border-orange-400 duration-300 transition-shadow p-6 rounded-xl font-mono h-full min-h-[220px]"
+            aria-label={skill.name}
           >
-            <div className="flex gap-2 items-center">
+            <div className="flex gap-3 items-center mb-2">
               <span>
                 <Icon
                   icon={skill.icon}
-                  width="40"
-                  height="40"
-                  className="text-orange-400"
+                  width="44"
+                  height="44"
+                  className="text-orange-400 drop-shadow"
+                  aria-label={skill.name + ' icon'}
                 />
               </span>
-              <span className="text-2xl font-bold text-wrap">{skill.name}</span>
+              <span className="text-2xl font-bold text-wrap text-white">{skill.name}</span>
             </div>
-            <p className="text-sm text-wrap">{skill.description}</p>
+            <p className="text-base text-gray-300 leading-relaxed">{skill.description}</p>
             <div>
-              <div className="opacity-0 group-hover:opacity-100 flex duration-300 mt-2 gap-2 ">
+              <ul className="flex flex-wrap gap-2 mt-3">
                 {skill.tags.map((tag, tagIdx) => (
-                  <span
+                  <li
                     key={tagIdx}
-                    className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400"
+                    className="px-3 py-2 rounded-full border border-orange-400 bg-gray-800 text-orange-300 text-xs font-medium shadow hover:scale-105 hover:bg-orange-400 hover:text-white transition-all duration-200"
                   >
                     {tag}
-                  </span>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
