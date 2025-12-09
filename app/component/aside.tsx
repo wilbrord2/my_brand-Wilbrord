@@ -3,6 +3,17 @@ import Link from "next/link";
 import React from "react";
 
 const AsidePage = () => {
+  const roles = [
+    {
+      text: ["QA", "Enthusiast"],
+      highlight: 0,
+    },
+    {
+      text: ["Senior", "Software", "Engineer"],
+      highlight: 1,
+    },
+  ];
+
   return (
     <div className="relative lg:sticky py-20 lg:top-0 w-full lg:w-1/2 xl:w-1/3 lg:max-h-screen flex flex-col gap-4 text-start ">
       <div className="flex flex-col gap-4 text-start ">
@@ -10,9 +21,22 @@ const AsidePage = () => {
         <h1 className="text-4xl font-bold ">
           Wilbrord <span className="text-orange-400">Ibyimana</span>
         </h1>
-        <h2 className="font-semibold text-lg">
-          <span className="text-orange-400">Software</span> Developer
-        </h2>
+        {/* Improved Role type section */}
+        <div>
+          {roles.map((role, idx) => (
+            <h2 className="font-semibold text-lg" key={idx}>
+              {role.text.map((word, i) =>
+                i === role.highlight ? (
+                  <span className="text-orange-400" key={i}>
+                    {word}{" "}
+                  </span>
+                ) : (
+                  <span key={i}>{word} </span>
+                )
+              )}
+            </h2>
+          ))}
+        </div>
         <ul className="hidden lg:flex w-fit flex-col gap-4 text-sm italic text-gray-500 font-semibold">
           <Link href={"#about"}>
             <li className="group flex items-center gap-4 cursor-pointer ">

@@ -7,111 +7,75 @@ const Skills = () => {
     return new Date().getFullYear() - year;
   };
 
+  // Array of skill objects
+  const skills = [
+    {
+      name: "Quality Assurance",
+      icon: "material-symbols-light:security",
+      description:
+        "Proficient in designing and executing test plans, automating test cases, and ensuring software reliability through rigorous QA processes.",
+      tags: ["Jest", "Postman", "Selenium"],
+    },
+    {
+      name: "Software Developer",
+      icon: "ant-design:code-filled",
+      description:`Experienced software developer skilled in both dynamic and static programming.`,
+      tags: ["JavaScript", "TypeScript", "Python"],
+    },
+    {
+      name: "Front-end Developer",
+      icon: "ri:computer-fill",
+      description: `Over ${handleExpirienceYear(
+        2021
+      )} years crafting dynamic web apps with modern UI frameworks.`,
+      tags: ["HTML", "CSS", "React JS", "Next JS"],
+    },
+    {
+      name: "Back-end Developer",
+      icon: "streamline:database-server-2-solid",
+      description: `Over ${handleExpirienceYear(
+        2023
+      )} years of experience developing robust and scalable web backends with various databases.`,
+      tags: ["Node Js", "Express JS", "Nest JS"],
+    },
+  ];
+
   return (
     <div id="skills" className="scroll-mt-28 ">
       <SectionTitles title={"Skills"} />
 
-      <div className="flex items-center flex-wrap gap-4 py-4 cursor-pointer">
-        <div className="group flex flex-col gap-2 border p-4 border-slate-500 hover:border-orange-400 w-fit rounded-lg font-mono">
-          <div className="flex gap-2 items-center">
-            <span>
-              <Icon
-                icon="ant-design:code-filled"
-                width="40"
-                height="40"
-                className="text-orange-400"
-              />
-            </span>
-            <span className="text-2xl font-bold text-wrap">
-              Software Developer
-            </span>
-          </div>
-          <div>
-            <p className="text-sm text-wrap">
-              Experienced software developer <br /> skilled in both dynamic{" "}
-              <br /> and static programming.
-            </p>
-            <div className="opacity-0 group-hover:opacity-100 flex duration-300 mt-2 gap-2 ">
-              <span className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400">
-                JavaScript
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-stretch justify-stretch gap-4 py-4 cursor-pointer">
+        {skills.map((skill, idx) => (
+          <div
+            key={idx}
+            className="group flex flex-col justify-between gap-2 border p-4 border-slate-500 hover:border-orange-400 w-fit rounded-lg font-mono"
+          >
+            <div className="flex gap-2 items-center">
+              <span>
+                <Icon
+                  icon={skill.icon}
+                  width="40"
+                  height="40"
+                  className="text-orange-400"
+                />
               </span>
-              <span className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400">
-                TypeScript
-              </span>
-              <span className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400">
-                Python
-              </span>
+              <span className="text-2xl font-bold text-wrap">{skill.name}</span>
+            </div>
+            <p className="text-sm text-wrap">{skill.description}</p>
+            <div>
+              <div className="opacity-0 group-hover:opacity-100 flex duration-300 mt-2 gap-2 ">
+                {skill.tags.map((tag, tagIdx) => (
+                  <span
+                    key={tagIdx}
+                    className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
-        <div className="group flex flex-col gap-2 border p-4 border-slate-500 hover:border-orange-400 w-fit rounded-lg font-mono">
-          <div className="flex gap-2 items-center">
-            <span>
-              <Icon
-                icon="ri:computer-fill"
-                width="40"
-                height="40"
-                className="text-orange-400"
-              />
-            </span>
-            <span className="text-2xl font-bold text-wrap">
-              Front-end Developer
-            </span>
-          </div>
-          <div>
-            <p className="text-sm text-wrap">
-              Over {handleExpirienceYear(2021)} years crafting dynamic <br />
-              web apps with and modern <br /> UI frameworks.
-            </p>
-            <div className="opacity-0 group-hover:opacity-100 flex mt-2 gap-2 ">
-              <span className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400">
-                HTML
-              </span>
-              <span className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400">
-                CSS
-              </span>
-              <span className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400">
-                React JS
-              </span>
-              <span className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400">
-                Next JS
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="group flex flex-col gap-2 border p-4 border-slate-500 hover:border-orange-400 w-fit rounded-lg font-mono">
-          <div className="flex gap-2 items-center">
-            <span>
-              <Icon
-                icon="streamline:database-server-2-solid"
-                width="40"
-                height="40"
-                className="text-orange-400"
-              />
-            </span>
-            <span className="text-2xl font-bold text-wrap">
-              Back-end Developer
-            </span>
-          </div>
-          <div>
-            <p className="text-sm text-wrap">
-              Over {handleExpirienceYear(2023)} years of experience <br />{" "}
-              developing robust and scalable <br /> web backends with various
-              databases.
-            </p>
-            <div className="opacity-0 group-hover:opacity-100 flex mt-2 gap-2 ">
-              <span className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400">
-                Node Js
-              </span>
-              <span className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400">
-                Express JS
-              </span>
-              <span className="px-2 py-[4px] rounded-lg border-slate-400 border hover:scale-105 hover:border-orange-400">
-                Nest JS
-              </span>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

@@ -13,23 +13,24 @@ const AboutMe = () => {
     >
       <SectionTitles title={"About ME"} />
       <p className="leading-loose">
-        I am a highly skilled software developer with{" "}
+        I am a software developer and quality assurance professional with{" "}
         <span className="font-semibold">
           {" "}
           <span className="text-xl">{handleExpirienceYear(2021)}</span>
           <span className="relative -left-0 -top-2">+</span> years
         </span>{" "}
-        of experience in software development, known for my ability to engineer
-        scalable server-side applications and design user-centric UIs. My
-        dedication to continuous improvement and prioritizing user privacy has
-        consistently enhanced application performance and reliability. I am
-        eager to bring my proven software development and management expertise
-        to a dynamic team, driving impactful projects and innovative solutions.
-        Let's connect and explore how my skills can contribute to your company's
-        success.
+        years of experience in software development and testing. Skilled in
+        engineering scalable server-side applications, designing user-centric
+        interfaces, and ensuring software quality through rigorous testing and
+        process improvement. My focus on user privacy, performance optimization,
+        and defect prevention has consistently enhanced system reliability and
+        user satisfaction. I am passionate about combining software engineering
+        expertise with strong QA practices to deliver high-performing, secure,
+        and user-friendly products. Eager to contribute to a dynamic team where
+        innovation, quality, and continuous improvement drive success.
       </p>
 
-      <a href="/Wilbrord_Fn.pdf" download={"Wilbrord_Fn.pdf"}>
+      <a href="/Wilbrord_QA.pdf" download={"Wilbrord_QA.pdf"}>
         <button className="group inline-flex mt-4 px-2 py-2 border rounded-xl text-base hover:border-orange-400">
           Download CV
           <Icon
