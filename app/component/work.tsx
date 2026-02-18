@@ -5,19 +5,13 @@ import Image from "next/image";
 const Work = () => {
   const projects = [
     {
-      image: "/ape.png",
-      title: "Biggest Health Challenge",
-      link: "https://biggesthealthchallenge.com/",
+      image: "/moca.png",
+      title: "MoCapital",
+      link: "https://mocapital.co.rw/",
       description:
-        "ApertaCura is a proactive health and wellness company that offers a digital platform combining smart technology and personalized insights.",
+        "MO Capital is a premier financial services firm dedicated to helping clients achieve their financial goals through expert guidance and innovative solutions.",
     },
-    {
-      image: "/mahali.png",
-      title: "Mahali Africa Adventure",
-      link: "https://mahaliafrica.com/",
-      description:
-        "A tour and travel agency based in Rwanda, stands out for its expertise in crafting personalized adventures",
-    },
+
     {
       image: "/website.png",
       title: "Uplus",
@@ -32,24 +26,39 @@ const Work = () => {
       description: "A dashboard for Uplus clients to visualize they data",
     },
     {
+      image: "/deluxe.png",
+      title: "Maison Deluxe",
+      link: "https://www.maisondeluxe.rw/",
+      description: "Maison Deluxe is Modern Hotel oparating in kigali",
+    },
+    {
+      image: "/ape.png",
+      title: "Biggest Health Challenge",
+      link: "https://biggesthealthchallenge.com/",
+      description:
+        "ApertaCura is a proactive health and wellness company that offers a digital platform combining smart technology and personalized insights.",
+    },
+    {
       image: "/amigos.png",
       title: "Amigos Shop",
       link: "https://e-comm-team-amigos-fn-staging.netlify.app/",
       description:
         "An e-commerce platfom where buyer and seller made transactions",
     },
-    {
-      image: "/awesomity.png",
-      title: "Mark 8",
-      link: "https://mark8-ecommerce.netlify.app/",
-      description: "An e-commerce platfom where you can buy different products",
-    },
+
     {
       image: "/myshop.png",
       title: "Made in rwanda",
       link: "https://shoppingmadeinrwanda.netlify.app/",
       description:
         "A platform where you can find different made in rwanda clothes",
+    },
+    {
+      image: "/mahali.png",
+      title: "Mahali Africa Adventure",
+      link: "https://mahaliafrica.com/",
+      description:
+        "A tour and travel agency based in Rwanda, stands out for its expertise in crafting personalized adventures",
     },
   ];
   return (

@@ -1,8 +1,12 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import SectionTitles from "./sectionTitles";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Skills = () => {
+  useEffect(() => {
+    handleExpirienceYear(2021);
+  });
   const handleExpirienceYear = (year: number) => {
     return new Date().getFullYear() - year;
   };
@@ -18,14 +22,14 @@ const Skills = () => {
     {
       name: "Software Developer",
       icon: "ant-design:code-filled",
-      description:`Experienced software developer skilled in both dynamic and static programming.`,
+      description: `Experienced software developer skilled in both dynamic and static programming.`,
       tags: ["JavaScript", "TypeScript", "Python"],
     },
     {
       name: "Front-end Developer",
       icon: "ri:computer-fill",
       description: `Over ${handleExpirienceYear(
-        2021
+        2021,
       )} years crafting dynamic web apps with modern UI frameworks.`,
       tags: ["HTML", "CSS", "React JS", "Next JS"],
     },
@@ -33,7 +37,7 @@ const Skills = () => {
       name: "Back-end Developer",
       icon: "streamline:database-server-2-solid",
       description: `Over ${handleExpirienceYear(
-        2023
+        2021,
       )} years of experience developing robust and scalable web backends with various databases.`,
       tags: ["Node Js", "Express JS", "Nest JS"],
     },
@@ -57,12 +61,16 @@ const Skills = () => {
                   width="44"
                   height="44"
                   className="text-orange-400 drop-shadow"
-                  aria-label={skill.name + ' icon'}
+                  aria-label={skill.name + " icon"}
                 />
               </span>
-              <span className="text-2xl font-bold text-wrap text-white">{skill.name}</span>
+              <span className="text-2xl font-bold text-wrap text-white">
+                {skill.name}
+              </span>
             </div>
-            <p className="text-base text-gray-300 leading-relaxed">{skill.description}</p>
+            <p className="text-base text-gray-300 leading-relaxed">
+              {skill.description}
+            </p>
             <div>
               <ul className="flex flex-wrap gap-2 mt-3">
                 {skill.tags.map((tag, tagIdx) => (

@@ -8,7 +8,7 @@ const Experience = () => {
       period: "2023 -> Present",
       work: "HYBRID",
       jobTitle:
-        "FullStack Software Developer | CRM Manager | Quality Assurance Lead – Uplus",
+        "Full-Stack Software Developer | CRM Manager | Quality Assurance Lead – Uplus",
       link: "https://uplus.rw/",
       description:
         "Responsible for full-stack development, CRM management, and Quality Assurance at Uplus. Designed user interfaces, developed backend applications, implemented RESTful APIs, and optimized data handling. Managed application state and databases, collaborated with cross-functional teams, and maintained documentation.",
@@ -30,7 +30,7 @@ const Experience = () => {
     {
       period: "2025 -> 6 Months",
       work: "REMOTE",
-      jobTitle: "Frontend Developer - Apertacura",
+      jobTitle: "Software Developer - Apertacura",
       link: "https://apertacura.com/",
       description:
         "Designed and maintained responsive web and mobile applications at Apertacura, focusing on user experience. Utilized modern frontend technologies for dynamic interfaces, state management, and animations. Collaborated with teams to deliver scalable, high-quality solutions.",
@@ -47,7 +47,7 @@ const Experience = () => {
     {
       period: "2024 -> 2025",
       work: "REMOTE",
-      jobTitle: "Frontend Developer | Quality Assurance Lead – NexGen",
+      jobTitle: "Software Developer | Quality Assurance Lead – NexGen",
       link: "https://nexgen.rw/",
       description:
         "Developed and maintained responsive web applications at NexGen, focusing on user experience with modern frontend technologies, dynamic interfaces, and state management. Collaborated with cross-functional teams to deliver scalable solutions.",

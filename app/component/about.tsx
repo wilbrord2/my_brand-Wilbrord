@@ -30,7 +30,7 @@ const AboutMe = () => {
         innovation, quality, and continuous improvement drive success.
       </p>
 
-      <a href="/Wilbrord_QA.pdf" download={"Wilbrord_QA.pdf"}>
+      <a href="/Wilbrord_Resume.pdf" download={"Wilbrord_Resume.pdf"}>
         <button className="group inline-flex mt-4 px-2 py-2 border rounded-xl text-base hover:border-orange-400">
           Download CV
           <Icon
